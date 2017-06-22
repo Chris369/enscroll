@@ -785,7 +785,7 @@
 					if ( settings.verticalScrolling ) {
 						trackWrapper = data.verticalTrackWrapper;
 						paneHeight = $this.innerHeight();
-						pct = paneHeight / this.scrollHeight;
+						pct = paneHeight / (this.scrollHeight - 2);
 						track = $( trackWrapper ).find( '.enscroll-track' )[0];
 						$scrollUpBtn = $( trackWrapper ).find( '.' + settings.scrollUpButtonClass );
 						$scrollDownBtn = $(trackWrapper).find( '.' + settings.scrollDownButtonClass );
